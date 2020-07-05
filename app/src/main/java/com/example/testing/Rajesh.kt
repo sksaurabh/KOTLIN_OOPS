@@ -1,16 +1,13 @@
 package com.example.testing
 
-fun main(args: Array<String>)
-{
-    //declaring a data class
-    data class man(val roll: Int,val name: String,val height:Int)
+fun main(args: Array<String>){
 
-    //declaring a variable of the above data class
-    //and initializing values to all parameters
+    var str: String? = null
+    var str2: String? = "May be declare nullable string"
+    var len1:  Int = str ?.length ?: -1
+    var len2:  Int = str2 ?.length ?:  -1
 
-    val man1=man(1,"man",50)
-
-    //printing all the details of the data class
-    println(man1.toString());
+    println("Length of str is $len1")
+    println("Length of str2 is ${len2}")
 }
 
